@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>YouTube Clean Switch</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <main class="panel">
+    <header>
+      <div class="mark" aria-hidden="true">▶</div>
+      <div>
+        <p class="eyebrow">YOUTUBE</p>
+        <h1>Hide Comments & Videos</h1>
+      </div>
+    </header>
+
+    <section class="switch-row" aria-label="YouTube cleanup setting">
+      <div class="switch-copy">
+        <h2>Hide distractions</h2>
+        <p id="description">Comments, sidebars and recommendations</p>
+      </div>
+      <label class="switch" title="Turn YouTube cleanup on or off">
+        <input id="enabled" type="checkbox" role="switch" aria-describedby="description">
+        <span class="slider"></span>
+      </label>
+    </section>
+
+    <p id="status" class="status" role="status" aria-live="polite">Loading…</p>
+    <p id="notice" class="notice" hidden>Open a youtube.com page to use this switch.</p>
+    <footer>The setting is saved on this Chrome profile.</footer>
+  </main>
+  <script src="popup.js"></script>
+</body>
+</html>
