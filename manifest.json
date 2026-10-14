@@ -11,9 +11,14 @@
     "https://www.youtube.com/*",
     "https://youtube.com/*"
   ],
+  "icons": {
+    "16": "icons/icon16.svg",
+    "48": "icons/icon48.svg",
+    "128": "icons/icon128.svg"
+  },
   "action": {
     "default_title": "YouTube Clean Switch",
-    "default_popup": "popup.html"
+    "default_popup": "src/popup.html"
   },
   "content_scripts": [
     {
@@ -22,10 +27,10 @@
         "https://youtube.com/*"
       ],
       "css": [
-        "youtube-clean.css"
+        "src/youtube-clean.css"
       ],
       "js": [
-        "content.js"
+        "src/content.js"
       ],
       "run_at": "document_start"
     }
